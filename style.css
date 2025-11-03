@@ -94,6 +94,8 @@ ul {
   font-weight: 400;
   line-height: 1.65;
   letter-spacing: -0.5px;
+  font-style: normal;
+  font-feature-settings: "liga" off, "clig" off;
 }
 
 .text-preset-5 {
@@ -108,11 +110,13 @@ ul {
   color: var(--green-400);
 }
 
+main {
+  padding: 2rem 2.5rem;
+}
+
 .spgc {
   display: grid;
   grid-template-columns: 1fr;
-  width: 83%;
-  margin: 0 auto;
   border-radius: 0.5rem;
   overflow: hidden;
 }
@@ -134,7 +138,7 @@ ul {
 
 .spgc__cta {
   background: var(--teal-500);
-  padding: 1.5rem 2.5rem;
+  padding: clamp(1.5rem, 0.3571rem + 2.381vw, 2.5rem) 2.5rem;
   color: #ffffff;
   h2 {
     margin-bottom: 1rem;
@@ -154,12 +158,23 @@ ul {
 
 .spgc__why {
   background: var(--teal-400);
-  padding: 1.5rem 2.5rem;
+  padding: clamp(1.5rem, 0.3571rem + 2.381vw, 2.5rem) 2.5rem;
   color: #ffffff;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   .features__list {
     opacity: 0.75;
+  }
+}
+
+@media (min-width: 48rem) {
+  .spgc {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 635px;
+  }
+  .spgc__header {
+    grid-column: span 2;
+    padding-right: 4rem;
   }
 }
