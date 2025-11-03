@@ -36,11 +36,7 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexboxg
-- Mobile-first workflow
-- [11ty](https://11ty.dev) - Static Site Generator
-- [sass](https://sass-lang.com/) - CSS Preprocessor
-- Nunjucks
+- Grid
 
 ## Author
 
