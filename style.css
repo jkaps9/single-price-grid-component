@@ -41,6 +41,21 @@ body {
   place-items: center;
 }
 
+ul {
+  list-style-type: none;
+}
+
+.btn {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background-color: var(--green-400);
+  padding: 0.5rem;
+  text-align: center;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
 .text-preset-1 {
   font-family: "Karla", sans-serif;
   font-size: 2rem;
@@ -119,8 +134,25 @@ body {
 
 .spgc__cta {
   background: var(--teal-500);
+  padding: 2.5rem;
+  color: #ffffff;
+  h2 {
+    margin-bottom: 1rem;
+  }
+  .pricing {
+    margin-bottom: 1.8125rem;
+  }
+  .price {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .time {
+    opacity: 0.5;
+  }
 }
 
 .spgc__why {
   background: var(--teal-400);
+  padding: 2.5rem;
 }
