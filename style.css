@@ -134,7 +134,7 @@ ul {
 
 .spgc__cta {
   background: var(--teal-500);
-  padding: 2.5rem;
+  padding: 1.5rem 2.5rem;
   color: #ffffff;
   h2 {
     margin-bottom: 1rem;
@@ -154,5 +154,12 @@ ul {
 
 .spgc__why {
   background: var(--teal-400);
-  padding: 2.5rem;
+  padding: 1.5rem 2.5rem;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  .features__list {
+    opacity: 0.75;
+  }
 }
