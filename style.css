@@ -54,6 +54,11 @@ ul {
   text-align: center;
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
   border-radius: 5px;
+
+  &:hover {
+    box-shadow: none;
+    opacity: 0.9;
+  }
 }
 
 .text-preset-1 {
