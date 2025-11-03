@@ -1,0 +1,126 @@
+/* karla-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/karla-v33-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* karla-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/karla-v33-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gray-500: #9aa7be;
+
+  --teal-500: #2ab3b1;
+  --teal-400: #4abfbd;
+  --teal-100: #e6eff5;
+
+  --green-400: #c0df33;
+}
+
+body {
+  background-color: var(--teal-100);
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
+.text-preset-1 {
+  font-family: "Karla", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.4px;
+}
+
+.text-preset-2 {
+  font-family: "Karla", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.4px;
+}
+
+.text-preset-3 {
+  font-family: "Karla", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.25px;
+}
+
+.text-preset-4 {
+  font-family: "Karla", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.45;
+  letter-spacing: -0.25px;
+}
+
+.text-preset-4-regular {
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.65;
+  letter-spacing: -0.5px;
+}
+
+.text-preset-5 {
+  font-family: "Karla", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: 0px;
+}
+
+.accent-text {
+  color: var(--green-400);
+}
+
+.spgc {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 83%;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.spgc__header {
+  background: #ffffff;
+  padding: 2.5rem;
+}
+
+.spgc__title {
+  color: var(--teal-500);
+  margin-bottom: 1.5rem;
+}
+
+.spgc__header-text {
+  margin-top: 0.5rem;
+  color: var(--gray-500);
+}
+
+.spgc__cta {
+  background: var(--teal-500);
+}
+
+.spgc__why {
+  background: var(--teal-400);
+}
